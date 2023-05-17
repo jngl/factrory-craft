@@ -2,5 +2,5 @@
 
 int main()
 {
-  fmt::print("Hello World");
+  spdlog::info("Welcome to spdlog!");
 }
