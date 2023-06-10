@@ -57,6 +57,12 @@ add_library(factrory_craft::factrory_craft_warnings ALIAS factrory_craft_warning
 # configure files based on CMake configuration options
 add_subdirectory(configured_files)
 
+#add lib
+add_subdirectory(lib)
+
+#add examples
+add_subdirectory(examples)
+
 # Adding the src:
 add_subdirectory(src)
 
@@ -69,7 +75,7 @@ endif()
 include(CTest)
 
 if(BUILD_TESTING)
-  message(AUTHOR_WARNING "Building Tests. Be sure to check out test/constexpr_tests.cpp for constexpr testing")
+#  message(AUTHOR_WARNING "Building Tests. Be sure to check out test/constexpr_tests.cpp for constexpr testing")
   add_subdirectory(test)
 endif()
 
